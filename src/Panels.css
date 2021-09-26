@@ -1,0 +1,14 @@
+.panels {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.panel {
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

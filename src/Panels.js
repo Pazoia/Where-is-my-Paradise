@@ -14,11 +14,14 @@ export const Panels = () => {
 
   if (!selectedPanel) {
     return (
-      <div className="panels">
-        <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/gYl-UtwNg_I/3000x1500" />
-        <Panel handleClick={handleClick} panelColor="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=3000&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d" />
-        <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/rFKUFzjPYiQ/3000x1500" />
-      </div>
+      <>
+        <h1>Where is your Paradise</h1>
+        <div className="panels">
+          <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/KMn4VEeEPR8/3000x1500" text="Beach" />
+          <Panel handleClick={handleClick} panelColor="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=3000&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d" />
+          <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/nV7GJmSq3zc/3000x1500" />
+        </div>
+      </>
     );
   }
 
@@ -29,9 +32,9 @@ export const Panels = () => {
   );
 };
 
-const Panel = ({ panelColor, handleClick }) => {
+const Panel = ({ panelColor, handleClick, text }) => {
   return (
-    <div
+    <div    
       onClick={() => handleClick(panelColor)}
       className="panel"
       style={{

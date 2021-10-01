@@ -1,3 +1,9 @@
+h1 {
+  color: orchid;
+  display: flex;
+  justify-content: center;
+}
+
 .panels {
   min-height: 100vh;
   background-color: gray;

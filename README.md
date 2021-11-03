@@ -28,12 +28,56 @@ Panels are themed with nature, city or beach scenes.
 As a user
 So I can make my choice
 I'd like to be shown the available options
+✅
 ```
 
 ```
 As a user
 So I can choose from the available panels
 I'd like to have interactive panels where I can select my choice
+✅
+```
+
+```
+As a user
+So I know what theme the images relate to
+I'd like to see the theme name on top of each image
+```
+
+```
+As a user
+So I can see more clearly what panel I'm on
+I'd like the panel to become more distinct when I'm hovering it
+```
+
+```
+As a user
+So I remain calm
+I'd like to see a smooth and soft transition from the panel to full screen
+```
+
+```
+As a user
+So I don't get tired of the same images
+I'd like to see a variety of random images, according to the theme
+```
+
+```
+As a user
+So I feel better using the paradise app
+I'd like to be shown positive affirmations once a panel is selected
+```
+
+```
+As a user
+So I get a nice experience using the app
+I'd like the positive affirmations to be displayed in a calm and soft transition
+```
+
+```
+As a user
+So I can experience new affirmations
+I'd like to be shown a diferent affirmation each time I select a panel
 ```
 
 ## Technologies

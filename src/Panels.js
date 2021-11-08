@@ -4,9 +4,9 @@ import "./Panels.css";
 export const Panels = () => {
   const [selectedPanel, setSelectedPanel] = useState(null);
   
-  const handleClick = (panelColor) => {
+  const handleClick = (panelImage) => {
     if (!selectedPanel) {
-      setSelectedPanel(panelColor);
+      setSelectedPanel(panelImage);
     } else {
       setSelectedPanel(null);
     }
@@ -14,31 +14,31 @@ export const Panels = () => {
 
   if (!selectedPanel) {
     return (
-      <>
-        <h1>Where is your Paradise</h1>
+      <div className="wrapper">
+        <h1 className="title">Where is your Paradise</h1>
         <div className="panels">
-          <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/KMn4VEeEPR8/3000x1500" text="Beach" />
-          <Panel handleClick={handleClick} panelColor="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=3000&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d" />
-          <Panel handleClick={handleClick} panelColor="https://source.unsplash.com/nV7GJmSq3zc/3000x1500" />
+          <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/eXHeq48Z-Q4/3000x1500" />
+          <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/7bwQXzbF6KE/3000x1500" />
+          <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/kheTI8pIywU/3000x1500" />
         </div>
-      </>
+      </div>
     );
   }
 
   return (
     <div className="panels">
-      <Panel handleClick={handleClick} panelColor={selectedPanel} />
+      <Panel handleClick={handleClick} panelImage={selectedPanel} />
     </div>
   );
 };
 
-const Panel = ({ panelColor, handleClick, text }) => {
+const Panel = ({ panelImage, handleClick }) => {
   return (
     <div    
-      onClick={() => handleClick(panelColor)}
+      onClick={() => handleClick(panelImage)}
       className="panel"
       style={{
-        backgroundImage: `url(${panelColor})`,
+        backgroundImage: `url(${panelImage})`,
       }}
     />
   );

@@ -1,7 +1,17 @@
-h1 {
-  color: orchid;
-  display: flex;
-  justify-content: center;
+.wrapper {
+  position: relative;
+}
+
+.title {
+  /* Title characteristics */
+  color: rgb(75, 74, 74);
+  text-align: center;
+
+  /* Center title */
+  position: absolute;
+  width: 400px;
+  top: 5%;
+  left: calc(50% - 200px);
 }
 
 .panels {

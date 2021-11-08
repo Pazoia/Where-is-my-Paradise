@@ -15,10 +15,13 @@ export const Panels = () => {
   if (!selectedPanel) {
     return (
       <div className="wrapper">
-        <h1 className="title">Where is your Paradise</h1>
+        <h1 className="title">Where is your Paradise?</h1>
         <div className="panels">
+          <h1 className="beach">By the Beach</h1>
           <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/eXHeq48Z-Q4/3000x1500" />
+          <h1 className="mountain">Walking in the Mountains</h1>
           <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/7bwQXzbF6KE/3000x1500" />
+          <h1 className="city">Spending the day in the City</h1>
           <Panel handleClick={handleClick} panelImage="https://source.unsplash.com/kheTI8pIywU/3000x1500" />
         </div>
       </div>
@@ -34,11 +37,11 @@ export const Panels = () => {
 
 const Panel = ({ panelImage, handleClick }) => {
   return (
-    <div    
+    <div
       onClick={() => handleClick(panelImage)}
       className="panel"
       style={{
-        backgroundImage: `url(${panelImage})`,
+      backgroundImage: `url(${panelImage})`,
       }}
     />
   );

@@ -54,6 +54,13 @@ I'd like the panel to become more distinct when I'm hovering it
 
 ```
 As a user
+So I feel better using the paradise app
+I'd like to be shown positive affirmations once a panel is selected
+✅
+```
+
+```
+As a user
 So I remain calm
 I'd like to see a smooth and soft transition from the panel to full screen
 ```
@@ -62,12 +69,6 @@ I'd like to see a smooth and soft transition from the panel to full screen
 As a user
 So I don't get tired of the same images
 I'd like to see a variety of random images, according to the theme
-```
-
-```
-As a user
-So I feel better using the paradise app
-I'd like to be shown positive affirmations once a panel is selected
 ```
 
 ```
@@ -110,3 +111,4 @@ Work in progress:
 - ✅ Added title and placed it on top of the images
 - ✅ Added theme names to the panels and placed them on top of respective image
 - ✅ When hovering over a panel, text zooms out slightly and text is boxed in for better visibility
+- ✅ When user selects a theme, a positive affirmation is displayed on top of fullscreen image

@@ -42,12 +42,14 @@ I'd like to have interactive panels where I can select my choice
 As a user
 So I know what theme the images relate to
 I'd like to see the theme name on top of each image
+✅
 ```
 
 ```
 As a user
 So I can see more clearly what panel I'm on
 I'd like the panel to become more distinct when I'm hovering it
+✅
 ```
 
 ```
@@ -104,5 +106,7 @@ yarn start
 
 Work in progress:
 
-- ⿴ Planning project MVP
--
+- ✅ Planning project MVP
+- ✅ Added title and placed it on top of the images
+- ✅ Added theme names to the panels and placed them on top of respective image
+- ✅ When hovering over a panel, text zooms out slightly and text is boxed in for better visibility

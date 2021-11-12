@@ -19,6 +19,24 @@
   left: calc(50% - 25vh);
 }
 
+.positive-affirmation {
+  background-color: rgb(74, 75, 75, 0.4);
+  padding: 10px;
+  border-style: groove;
+  width: 75vh;
+
+  /* Text */
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+
+  /* Center title */
+  position: absolute;
+  bottom: 15%;
+  left: calc(50% - 37.5vh);
+}
+
 .theme {
   position: absolute;
   color: whitesmoke;

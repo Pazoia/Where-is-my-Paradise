@@ -27,8 +27,14 @@ export const Panels = () => {
   }
 
   return (
-    <div className="panels">
-        <Panel handleClick={handleClick} panelImage={selectedPanel} />
+    <div className="wrapper">
+      <text className="positive-affirmation">
+        My life is just beginning. <br/>
+        Everything will work out for me.
+      </text>
+      <div className="panels">
+          <Panel handleClick={handleClick} panelImage={selectedPanel} />
+      </div>
     </div>
   );
 };

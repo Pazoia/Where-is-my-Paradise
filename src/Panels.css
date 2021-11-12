@@ -19,37 +19,11 @@
   left: calc(50% - 25vh);
 }
 
-.beach {
+.theme {
+  position: absolute;
   color: whitesmoke;
   text-align: center;
-  width: 40vh;
-
-  /* Positioning in panel */
-  position: absolute;
   bottom: 15%;
-  left: calc(15% - 20vh);
-}
-
-.mountain {
-  color: whitesmoke;
-  text-align: center;
-  width: 40vh;
-
-  /* Positioning in panel */
-  position: absolute;
-  bottom: 15%;
-  left: calc(50% - 20vh);
-}
-
-.city {
-  color: whitesmoke;
-  text-align: center;
-  width: 40vh;
-
-  /* Positioning in panel */
-  position: absolute;
-  bottom: 15%;
-  left: calc(85% - 20vh);
 }
 
 .panels {
@@ -72,6 +46,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
+}
+
+.panel:hover .theme {
+  zoom: 150%;
+  background-color: rgb(74, 75, 75, 0.4);
+  padding: 8px;
+  border-style: groove;
+  transition: 1s;
 }
 
 .panel .selected {

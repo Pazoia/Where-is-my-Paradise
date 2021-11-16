@@ -1,3 +1,11 @@
+const beachImages = ["YmQ0-nmWcV0", "OD9EOzfSOh0", "eXHeq48Z-Q4"];
+const mountainImages = ["7bwQXzbF6KE"];
+const cityImages = ["kheTI8pIywU"];
+
+function rando(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 export const themeNames = {
     beach: "By the Beach",
     mountain: "Walking in the Mountains",
@@ -8,8 +16,12 @@ export const positiveAffirmations = {
     life: `You can do this. Be patient and persistent.`,
 };
 
+const randomImage = (arr) => {
+    return `https://source.unsplash.com/${rando(arr)}/3000x1500`;
+};
+
 export const panelImage = {
-    beach: "https://source.unsplash.com/eXHeq48Z-Q4/3000x1500",
-    mountain: "https://source.unsplash.com/7bwQXzbF6KE/3000x1500",
-    city: "https://source.unsplash.com/kheTI8pIywU/3000x1500",
+    beach: randomImage(beachImages),
+    mountain: randomImage(mountainImages),
+    city: randomImage(cityImages),
 }

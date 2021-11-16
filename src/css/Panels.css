@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.wrapper.title-hidden > :first-child {
+  transform: translateY(-150%);
+}
+
 .title {
   background-color: rgba(255, 255, 255, 0.4);
   border-style: groove;

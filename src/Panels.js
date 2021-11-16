@@ -17,7 +17,7 @@ export const Panels = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className={`wrapper ${selectedPanel ? "title-hidden" : ""}`}>
       <h1 className="title">Where is your Paradise?</h1>
       <div className="panels">
         <Panel selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.beach} theme={themeNames.beach} />

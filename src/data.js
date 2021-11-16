@@ -1,6 +1,6 @@
 const beachImages = ["eXHeq48Z-Q4", "p3OzJuT_Dks", "OD9EOzfSOh0"];
-const mountainImages = ["7bwQXzbF6KE"];
-const cityImages = ["kheTI8pIywU"];
+const mountainImages = ["IRgTjnoeK5I", "NxSstX5R774", "7bwQXzbF6KE"];
+const cityImages = ["Osr6aAlV-MA", "Nyvq2juw4_o", "kheTI8pIywU"];
 
 function rando(arr) {
     return arr[Math.floor(Math.random() * arr.length)];

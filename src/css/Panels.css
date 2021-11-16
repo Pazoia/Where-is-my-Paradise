@@ -3,7 +3,7 @@
 }
 
 .wrapper.title-hidden > :first-child {
-  transform: translateY(-150%);
+  opacity: 0;
 }
 
 .title {
@@ -22,7 +22,7 @@
   top: 3%;
   left: calc(50% - 25vh);
 
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .panels {

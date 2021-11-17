@@ -63,12 +63,14 @@ I'd like to be shown positive affirmations once a panel is selected
 As a user
 So I remain calm
 I'd like to see a smooth and soft transition from the panel to full screen
+✅
 ```
 
 ```
 As a user
 So I don't get tired of the same images
 I'd like to see a variety of random images, according to the theme
+✅
 ```
 
 ```
@@ -112,3 +114,5 @@ Work in progress:
 - ✅ Added theme names to the panels and placed them on top of respective image
 - ✅ When hovering over a panel, text zooms out slightly and text is boxed in for better visibility
 - ✅ When user selects a theme, a positive affirmation is displayed on top of fullscreen image
+- ✅ From panel to full screen animation with a softer transition.
+- ✅ Images change with page refresh, images chosen at random according to theme

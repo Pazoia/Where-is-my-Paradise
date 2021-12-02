@@ -33,7 +33,7 @@
 /* Selected Full Screen Image */
 
 .panel.selected {
-  flex: 10;
+  flex: 1;
   background-position: center;
   background-repeat: no-repeat;
 }

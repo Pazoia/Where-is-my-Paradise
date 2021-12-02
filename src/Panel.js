@@ -12,7 +12,7 @@ export const Panel = ({ selectedPanel, panelImage, handleClick, theme }) => {
       backgroundImage: `url(${panelImage})`,
       }}
     >
-      <h1 className={selectedPanel ? "positive-affirmation" : "theme"}>{!selectedPanel ? theme : positiveAffirmations.life}</h1>
+      <h1 className={selectedPanel ? "positive-affirmation fade-in" : "theme"}>{!selectedPanel ? theme : positiveAffirmations.life}</h1>
     </div>
   );
 };

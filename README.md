@@ -77,6 +77,7 @@ I'd like to see a variety of random images, according to the theme
 As a user
 So I get a nice experience using the app
 I'd like the positive affirmations to be displayed in a calm and soft transition
+✅
 ```
 
 ```
@@ -114,5 +115,6 @@ Work in progress:
 - ✅ Added theme names to the panels and placed them on top of respective image
 - ✅ When hovering over a panel, text zooms out slightly and text is boxed in for better visibility
 - ✅ When user selects a theme, a positive affirmation is displayed on top of fullscreen image
-- ✅ From panel to full screen animation with a softer transition.
+- ✅ From panel to full screen animation with a softer transition
 - ✅ Images change with page refresh, images chosen at random according to theme
+- ✅ Positive affirmations fading in when a panel is selected

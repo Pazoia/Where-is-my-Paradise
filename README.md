@@ -2,6 +2,9 @@
 
 I'm buiding this project to practise my React skills.
 
+App deployed on Netlify, follow the link below to try it out.  
+https://where-is-your-paradise.netlify.app/
+
 ## Table of Contents
 
 - [Description](#description)

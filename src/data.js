@@ -5,10 +5,6 @@ const beachLastImage = localStorage.getItem("beachLastImage");;
 const mountainLastImage = localStorage.getItem("mountainLastImage");
 const cityLastImage = localStorage.getItem("cityLastImage");;
 
-// function rando(arr) {
-//     return arr[Math.floor(Math.random() * arr.length)];
-// }
-
 export const themeNames = {
     beach: "Beach",
     mountain: "Mountains",

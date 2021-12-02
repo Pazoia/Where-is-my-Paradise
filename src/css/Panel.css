@@ -33,8 +33,7 @@
 /* Selected Full Screen Image */
 
 .panel.selected {
-  /* Image */
-  flex: 7;
+  flex: 10;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -55,13 +54,13 @@
   font-weight: bold;
   text-align: center;
 
-  /* Center title */
+  /* Centering element */
   position: absolute;
   bottom: 15%;
   left: calc(50% - 37.5vh);
 }
 
-/* Handling fading in and fading out of elements */
+/* Handling fading in of positive affirmation */
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;

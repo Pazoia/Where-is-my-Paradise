@@ -27,7 +27,7 @@
 
 .panels {
   min-height: 100vh;
-  background-color: gray;
+  background-color: black;
 
   display: flex;
   flex-direction: row;

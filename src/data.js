@@ -26,7 +26,7 @@ const beachRandomImage = (beachImages) => {
         return beachRandomImage(beachImages);
     }
     localStorage.setItem("beachLastImage", image);
-    return `https://source.unsplash.com/${image}/2750x1500`;
+    return `https://source.unsplash.com/${image}/2500x1500`;
 };
 
 const mountainRandomImage = (mountainImages) => {
@@ -36,7 +36,7 @@ const mountainRandomImage = (mountainImages) => {
         return mountainRandomImage(mountainImages);
     }
     localStorage.setItem("mountainLastImage", image);
-    return `https://source.unsplash.com/${image}/2750x1500`;
+    return `https://source.unsplash.com/${image}/2500x1500`;
 };
 
 const cityRandomImage = (cityImages) => {
@@ -46,7 +46,7 @@ const cityRandomImage = (cityImages) => {
         return cityRandomImage(cityImages);
     }
     localStorage.setItem("cityLastImage", image);
-    return `https://source.unsplash.com/${image}/2750x1500`;
+    return `https://source.unsplash.com/${image}/2500x1500`;
 };
 
 export const panelImage = {

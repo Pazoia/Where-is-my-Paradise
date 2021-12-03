@@ -87,6 +87,7 @@ I'd like the positive affirmations to be displayed in a calm and soft transition
 As a user
 So I can experience new affirmations
 I'd like to be shown a diferent affirmation each time I select a panel
+✅
 ```
 
 ## Technologies
@@ -121,3 +122,4 @@ Work in progress:
 - ✅ From panel to full screen animation with a softer transition
 - ✅ Images change with page refresh, images chosen at random according to theme
 - ✅ Positive affirmations fading in when a panel is selected
+- ✅ Different positive affirmations chosen at random each time a panel is chosen, choices not repeaded sequentially.

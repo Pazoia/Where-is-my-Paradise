@@ -3,14 +3,21 @@ import React from "react";
 
 import "./css/Panels.css";
 import { Panel } from "./Panel";
-import { themeNames, panelImage } from "./data";
+import { themeNames, panelImage, affirmationsList } from "./data";
+import { randomAffirmationGenerator } from "./randomAffirmationGenerator";
+
 
 export const Panels = () => {
   const [selectedPanel, setSelectedPanel] = useState(null);
+  const [selectedAffirmation, setSelectedAffirmation] = useState(null);
+
+  let affirmation;
   
   const handleClick = (panelImage) => {
     if (!selectedPanel) {
       setSelectedPanel(panelImage);
+      affirmation = randomAffirmationGenerator(affirmationsList, selectedAffirmation);
+      setSelectedAffirmation(affirmation);
     } else {
       setSelectedPanel(null);
     }
@@ -20,9 +27,9 @@ export const Panels = () => {
     <div className={`wrapper ${selectedPanel ? "title-hidden" : ""}`}>
       <h1 className="title">Where is your Paradise?</h1>
       <div className="panels">
-        <Panel selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.beach} theme={themeNames.beach} />
-        <Panel selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.mountain} theme={themeNames.mountain} />
-        <Panel selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.city} theme={themeNames.city} />
+        <Panel selectedAffirmation={selectedAffirmation} selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.beach} theme={themeNames.beach} />
+        <Panel selectedAffirmation={selectedAffirmation} selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.mountain} theme={themeNames.mountain} />
+        <Panel selectedAffirmation={selectedAffirmation} selectedPanel={selectedPanel} handleClick={handleClick} panelImage={panelImage.city} theme={themeNames.city} />
       </div>
     </div>
   );

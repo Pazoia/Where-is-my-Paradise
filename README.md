@@ -90,6 +90,20 @@ I'd like to be shown a diferent affirmation each time I select a panel
 ✅
 ```
 
+```
+As a user
+So I can experience new affirmations within the same panel
+I'd like to be shown a diferent affirmation every 30 secs I'm in a panel
+
+```
+
+```
+As a user
+So I don't have to wait for new affirmations
+I'd like to have a button that triggers a diferent affirmation on click
+
+```
+
 ## Technologies
 
 React

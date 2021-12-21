@@ -43,9 +43,9 @@
 }
 
 .positive-affirmation {
-  background-color: rgb(74, 75, 75, 0.4);
-  padding: 10px;
-  border-style: groove;
+  background-color: rgb(74, 75, 75, 0.3);
+  padding: 15px;
+  border-radius: 25px;
   width: 75vh;
 
   /* Text */

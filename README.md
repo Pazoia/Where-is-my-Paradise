@@ -94,7 +94,7 @@ I'd like to be shown a diferent affirmation each time I select a panel
 As a user
 So I can experience new affirmations within the same panel
 I'd like to be shown a diferent affirmation every 30 secs I'm in a panel
-
+✅
 ```
 
 ```
@@ -137,3 +137,4 @@ Work in progress:
 - ✅ Images change with page refresh, images chosen at random according to theme
 - ✅ Positive affirmations fading in when a panel is selected
 - ✅ Different positive affirmations chosen at random each time a panel is chosen, choices not repeaded sequentially.
+- ✅ A diferent affirmation being loaded every 30 secs a user is in a panel.

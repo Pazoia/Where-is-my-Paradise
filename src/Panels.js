@@ -29,7 +29,7 @@ export const Panels = () => {
       
       setTimeout(() => {
         setSelectedAffirmation(nextAffirmation);
-      }, 10000);
+      }, 30000);
     }
   });
 

@@ -11,12 +11,10 @@ export const Panels = () => {
   const [selectedPanel, setSelectedPanel] = useState(null);
   const [selectedAffirmation, setSelectedAffirmation] = useState(null);
 
-  const affirmation = randomAffirmationGenerator(affirmationsList, selectedAffirmation);
-
   const handleClick = (panelImage) => {
     if (!selectedPanel) {
       setSelectedPanel(panelImage);
-      setSelectedAffirmation(affirmation);
+      setSelectedAffirmation(randomAffirmationGenerator(affirmationsList, selectedAffirmation));
     } else {
       setSelectedPanel(null);
       setSelectedAffirmation(null);
@@ -24,11 +22,9 @@ export const Panels = () => {
   };
 
   useEffect(() => {
-    if (selectedAffirmation) {
-      let nextAffirmation = affirmation;
-      
+    if (selectedAffirmation) {     
       setTimeout(() => {
-        setSelectedAffirmation(nextAffirmation);
+        setSelectedAffirmation(randomAffirmationGenerator(affirmationsList, selectedAffirmation));
       }, 30000);
     }
   });

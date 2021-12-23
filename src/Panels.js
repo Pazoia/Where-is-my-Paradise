@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
 
 import "./css/Panels.css";
@@ -21,13 +21,22 @@ export const Panels = () => {
     }
   };
 
+  let timeoutCount = useRef(0);
+  let myTimeout = useRef(undefined);
   useEffect(() => {
-    if (selectedAffirmation) {     
-      setTimeout(() => {
+    console.log(`myTimeout = ${myTimeout.current}`);
+    
+    if (selectedPanel) {
+      myTimeout.current = setTimeout(() => {
+        timeoutCount.current += 1;
+        console.log(`timeoutCount = ${timeoutCount.current}`);
         setSelectedAffirmation(randomAffirmationGenerator(affirmationsList, selectedAffirmation));
-      }, 30000);
+      }, 5000);
+      console.log(`myTimeout after setting = ${myTimeout.current}`);
+    } else {
+      clearTimeout(myTimeout.current);
     }
-  });
+  }, [selectedPanel, selectedAffirmation]);
 
   return (
     <div className={`wrapper ${selectedPanel ? "title-hidden" : ""}`}>

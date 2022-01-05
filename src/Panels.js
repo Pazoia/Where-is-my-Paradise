@@ -21,21 +21,21 @@ export const Panels = () => {
     }
   };
 
-  let timeoutCount = useRef(0);
-  let myTimeout = useRef(undefined);
+  let myTimeout = useRef();
+  
   useEffect(() => {
-    console.log(`myTimeout = ${myTimeout.current}`);
-    
     if (selectedPanel) {
       myTimeout.current = setTimeout(() => {
-        timeoutCount.current += 1;
-        console.log(`timeoutCount = ${timeoutCount.current}`);
         setSelectedAffirmation(randomAffirmationGenerator(affirmationsList, selectedAffirmation));
-      }, 5000);
-      console.log(`myTimeout after setting = ${myTimeout.current}`);
-    } else {
-      clearTimeout(myTimeout.current);
+      }, 30000);
     }
+
+    return () => { 
+      if (!selectedPanel) {
+        clearTimeout(myTimeout.current);
+      } 
+    };
+
   }, [selectedPanel, selectedAffirmation]);
 
   return (

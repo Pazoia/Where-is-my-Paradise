@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
 
 import "./css/Panels.css";
@@ -21,13 +21,22 @@ export const Panels = () => {
     }
   };
 
+  let myTimeout = useRef();
+  
   useEffect(() => {
-    if (selectedAffirmation) {     
-      setTimeout(() => {
+    if (selectedPanel) {
+      myTimeout.current = setTimeout(() => {
         setSelectedAffirmation(randomAffirmationGenerator(affirmationsList, selectedAffirmation));
       }, 30000);
     }
-  });
+
+    return () => { 
+      if (!selectedPanel) {
+        clearTimeout(myTimeout.current);
+      } 
+    };
+
+  }, [selectedPanel, selectedAffirmation]);
 
   return (
     <div className={`wrapper ${selectedPanel ? "title-hidden" : ""}`}>
